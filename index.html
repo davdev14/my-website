@@ -7,12 +7,15 @@
   <title>DavDev</title>
   <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
   <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header>
+  <header href="#home">
     <div class="pic">
-      <img src="/images/david ouatedem photo-removebg-preview.jpg" alt="my pictue">
-      <a href="#home"><p>DavDev</p></a>
+      <a href="" class="flex gap10">
+        <img src="/images/david ouatedem photo-removebg-preview.jpg" alt="my pictue">
+      <p>DavDev</p>
+      </a>
     </div>
     <div class="dropdown-menu">
       <img src="/images/menu_FILL0_wght400_GRAD0_opsz48 (1).svg" alt="" class="dropdown-btn" onclick="display()">
@@ -32,14 +35,13 @@
     <h1>
       hey, my name is <span>david ouatedem</span>
     </h1>
-    <p class="para">
+    <p class="para mw">
       i'm a frontend focused web developer builing the frontend of websites and web applications that leads to the success of the overall project.
     </p>
-    <div class="home-btns flex">
-      <a href="#about" class="buttons">more about me</a>
-      <a href="#projects" class="buttons">check my projects</a>
-    </div>
-    <p class="para" style="margin-top: 30px;">scroll down</p>
+    <button class="home-btn buttons">
+      My Projects
+    </button>
+    <p class="para" style="padding-top: 30px;">scroll down</p>
   </section>
 
   <section id="about">
@@ -49,16 +51,16 @@
     <p class="para">
       Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
     </p>
-    <h2>
+    <h2 class="sub-heading">
       Get to know me!
     </h2>
-    <p class="para" >
+    <p class="para pb-5 " >
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quisquam qui reiciendis, corporis iste quae tenetur nam minus. Fugit nemo harum consequuntur tenetur asperiores aliquam illum nobis repellendus commodi mollitia quasi praesentium dolorum, illo, nesciunt ea temporibus numquam! Tempora rerum, molestiae vitae consequatur, libero necessitatibus fugiat, animi enim provident quaerat quos dolorum quam officiis porro vel eius doloribus voluptate. In porro enim reiciendis architecto, totam distinctio itaque! Natus odit atque qui ducimus molestiae aliquid odio, magnam corrupti quae debitis libero.
     </p>
-    <div>
-      <a href="contact" class="buttons">Contact me</a>
-    </div>
-    <h2>
+    <button class="buttons-hov">
+      <a href="#contact" class="buttons ml-10">Contact me</a>
+    </button>
+    <h2 class="sub-heading">
       My skills
     </h2>
     <ul class="skills">
@@ -75,6 +77,129 @@
       <li class="skill-box">project management</li>
     </ul>
   </section>
+
+  <section id="projects">
+    <h1 class="title">
+      projects
+    </h1>
+    <p class="para" id="projects2">
+      Here you will find some personal projects that i created to show case my skills.
+    </p>
+    <div class="project">
+      <div class="pjt-img-div">
+        <img src="/images/Capture web_14-12-2022_16342_dav-password-generator.netlify.app.jpeg" alt="project-image" class="pjt-img">
+      </div>
+      <h2 class="sub-heading">password generator</h2>
+      <p class="para">
+        This is a webapp that i created where people can get randomly generated very secured passwords that they can copy to the clipboard to use anywhere they need.
+      </p>
+      <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">Javascript</div>
+      </div>
+      <button class="mt-10 buttons-hov"><a href="https://dav-password-generator.netlify.app" class="buttons" target="_blank">view project</a></button>
+    </div>
+
+    <div class="project">
+      <div class="pjt-img-div">
+        <img src="/images/Capture web_14-12-2022_16531_dav-metric-converter.netlify.app.jpeg" alt="project-image" class="pjt-img">
+      </div>
+      <h2 class="sub-heading">Metric/imperial unit converter</h2>
+      <p class="para">
+        This is a webapp that i created to convert metric units of measurements like lenght, volume and mass to their value in imperial units.
+      </p>
+      <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">Javascript</div>
+      </div>
+      <button class="mt-10 buttons-hov"><a href="https://dav-metric-converter.netlify.app" class="buttons" target="_blank">view project</a></button>
+    </div>
+
+    <div class="project">
+      <div class="pjt-img-div">
+        <img src="/images/Capture web_14-12-2022_16634_dav-scoreboard.netlify.app.jpeg" alt="project-image" class="pjt-img">
+      </div>
+      <h2 class="sub-heading">Basketball scoreboard</h2>
+      <p class="para">
+        This webapp is Basketball scoreboard where the score holder can easily input the score, fouls and mention the period of the game. The score keeps incrementing and the players score through out the game. 
+      </p>
+      <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">Javascript</div>
+      </div>
+      <button class="mt-10 buttons-hov"><a href="https://dav-scoreboard.netlify.app" class="buttons" target="_blank">view project</a></button>
+    </div>
+
+    <div class="project">
+      <div class="pjt-img-div">
+        <img src="/images/Capture web_14-12-2022_16716_dav-counter.netlify.app.jpeg" alt="project-image" class="pjt-img">
+      </div>
+      <h2 class="sub-heading">Counter App</h2>
+      <p class="para">
+        This is a simple app to count for example the number of people entring a bus or something else. It can be used to count anything
+      </p>
+      <div class="skills">
+        <div class="skill-box">HTML5</div>
+        <div class="skill-box">CSS3</div>
+        <div class="skill-box">Javascript</div>
+      </div>
+      <button class="mt-10 buttons-hov"><a href="https://dav-counter.netlify.app" class="buttons" target="_blank">view project</a></button>
+    </div>
+
+
+  </section>
+
+
+  <section id="contact">
+    <h1 class="title">
+      Contact me
+    </h1>
+    <p class="para">
+      Feel free to contact me buy submitting the form below and i will get back to you as soon as possible
+    </p>
+    <div class="form-container">
+      <form action="https://formspree.io/f/xoqzaqql" method="post" name="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+  
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" required>
+  
+        </textarea>
+        <div class="submit-btn">
+          <input type="submit" name="form" id="form-submit" value="SUBMIT" class="buttons buttons-hov">
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="social medias">
+    
+  </div>
+  <footer>
+    <section id="socials">
+      <h1>socials</h1>
+      <div class="align-c-pad">Feel free to contact me through my socials</div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/david-ouatedem-077985253/"target="_blank"><img src="/images/linkedin-in.svg" alt=""></a>
+        <a href="https://github.com/davdev14"target="_blank"><img src="/images/github.svg" alt=""></a>
+        <a href="https://twitter.com/davdev1400"target="_blank"><img src="/images/twitter.svg" alt=""></a>
+        <a href="https://wa.me/qr/27ANIH5BI527F1"target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
+      </div>
+      <div class="footer-p">
+        <h2>David Ouatedem</h2>
+        <p>
+          A frontend focused web developer builing websites and web applications that leads to the success of the overall product.
+        </p>
+        <h5>&copycopyright2022, Made by <span>David Ouatedem</span></h5>
+      </div>
+    </section>
+  </footer>
   <script src="/main.js"></script>
 </body>
 </html>

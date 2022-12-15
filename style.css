@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family:'Ubuntu', Helvetica, sans-serif;
+  font-size: 16px;
 }
 header {
   display: flex;
@@ -8,9 +9,11 @@ header {
   align-items: center;
   background-color: #fff;
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
 }
+.gap10{gap: 10px;}
 .pic {
   display: flex;
   gap: 10px;
@@ -85,6 +88,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+.home-btn {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
 #home h1 {
   text-transform: uppercase;
   color: #000;
@@ -111,28 +119,28 @@ header {
   box-shadow:  3px -3px 12px #2092ec,
               -3px 3px 12px #229bfa;
 }
-.home-btns {
-  gap: 20px;
-  margin-top: 60px;
+.buttons-hov:hover {
+  transform: scale(1.1);
 }
 /* section about */
 #about {
-  height: 800px;
+  margin-top: 100px;
 }
 .title {
   text-align: center;
   text-transform: uppercase;
   padding-top: 80px;
   border-bottom: 5px solid #2196F3;
-  margin: 0 100px;
+  margin: 0 60px;
   font-size: 2em;
+  font-weight: 700;
 }
-#about h2 {
-  padding: 40px 0 0 20px;
+.sub-heading{
+  padding: 40px 0 15px 20px;
+  font-size: 1.5em;
+  font-weight: 700;
 }
-#about div {
-  margin: 50px 0 0 50px;
-}
+
 .skill-box {
   list-style: none;
   background-color: #E7E7E7;
@@ -146,4 +154,116 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin: 12px;
+}
+/* section projects */
+#projects {
+  margin-top: 100px;
+}
+.pjt-img-div {
+  margin: 50px 0 0 0;
+  width: 300px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* section contact */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+form input {
+  border: 1px solid #2196F3;
+  margin-bottom: 20px;
+  outline: 1px solid #2196F3;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+form label {
+  margin-left: 12px;
+  color: #656565;
+}
+form textarea {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #2196F3;
+  margin-bottom: 20px;
+  outline: 1px solid #2196F3;
+}
+form input[type="submit"] {
+  cursor: pointer;
+  padding: 5px 20px;
+  width: 100px;
+  color: #fff;
+  border-radius: 25px;
+    background: #2196f3;
+    box-shadow: 3px -3px 12px #2092ec, -3px 3px 12px #229bfa;
+}
+.submit-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#contact {
+  background-color: #acadac;
+  margin-top: 200px;
+  padding-bottom: 100px;
+}
+.form-container {
+  background-color: #fff;
+  margin: 30px 25px;
+  border-radius: 17px;
+  padding: 2px;
+}
+#socials a img{
+  height: 24px;
+}
+#socials a {
+  display: inline-block;
+  margin: 20px 5px 0 12px;
+}
+#socials {
+background-color: #656565;
+}
+#socials h1 {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 50px;
+  border-bottom: 5px solid #acadac;
+  margin: 0 60px;
+}
+.footer-p {
+  margin: 12px;
+  
+}
+.footer-p h2 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.footer-p p {
+  border-bottom: 1px solid #acadac;
+  padding-bottom: 30px;
+}
+.footer-p h5 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-p h5 span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.align-c-pad {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 700;
+}
+.mw {
+  max-width: 817px;
+  margin: auto;
 }
