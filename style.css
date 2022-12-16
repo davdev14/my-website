@@ -272,7 +272,14 @@ background-color: #656565;
   margin: auto;
 }
 .warning {
-  margin: 12px;
-  color: red;
-  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .warning {
+    display: inline;
+    margin: 12px;
+    color: red;
+    text-align: center;
+  }
 }
