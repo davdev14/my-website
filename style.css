@@ -3,6 +3,9 @@ body {
   font-family:'Ubuntu', Helvetica, sans-serif;
   font-size: 16px;
 }
+html{
+  scroll-behavior: smooth;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -139,6 +142,7 @@ header {
   padding: 40px 0 15px 20px;
   font-size: 1.5em;
   font-weight: 700;
+  text-align: center;
 }
 
 .skill-box {
@@ -266,4 +270,9 @@ background-color: #656565;
 .mw {
   max-width: 817px;
   margin: auto;
+}
+.warning {
+  margin: 12px;
+  color: red;
+  text-align: center;
 }
