@@ -78,7 +78,7 @@ header {
 #home {
   padding-top: 50px;
   background: url("/images/pexels-laura-tancredi-7078619.jpg") repeat;
-  height: 700px;
+  /* height: 700px; */
 }
 #home #profile-pic {
   height: 200px;
