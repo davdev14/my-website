@@ -24,146 +24,191 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="#socials">Socials</a>
+        <a href="https://drive.google.com/file/d/1PyJ0d1ecggYNHxvDoScitqvITb5ReYCi/view?usp=share_link" target="_blank">Download CV</a>
       </div>
     </div>
   </header>
 
   <section id="home">
     <div class="profile-pic flex">
-      <img src="/images/profile-pic.png" alt="profile pic">
+      <img src="/images/profile-pic.png" alt="profile pic" id="profile-pic">
     </div>
-    <h1>
+    <h1 style="font-weight: 700; font-size: 2.5em;" class="pad">
       hey, my name is <span>david ouatedem</span>
     </h1>
-    <p class="para mw">
+    <p class="para pad">
       i'm a frontend focused web developer builing the frontend of websites and web applications that leads to the success of the overall project.
     </p>
-    <p class="para" style="color: #2196F3;">Check my projects in the projects section</p>
-    <p class="warning">Warning: this website is best displayed on mobile phones, the tablet & desktop version will be available soon</p>
-    <p class="para" style="padding-top: 30px;">scroll down</p>
+    <div class="flex p-10">
+      <button class="buttons-hov">
+        <a href="#projects" class="buttons">My Projects</a>
+      </button>
+      <button class="buttons-hov pl-6">
+        <a href="https://drive.google.com/file/d/1PyJ0d1ecggYNHxvDoScitqvITb5ReYCi/view?usp=share_link" class="cv-btn" target="_blank">Download CV</a>
+      </button>
+    </div>
+    <p class="para pb-5">scroll down</p>
+    <div class="socials-bar">
+      <a href="https://www.linkedin.com/in/david-ouatedem-077985253/"target="_blank"><img src="/images/linkedin-in.svg" alt=""></a>
+        <a href="https://github.com/davdev14"target="_blank"><img src="/images/github.svg" alt=""></a>
+        <a href="https://twitter.com/davdev1400"target="_blank"><img src="/images/twitter.svg" alt=""></a>
+        <a href="https://wa.me/qr/27ANIH5BI527F1"target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
+    </div>
   </section>
 
   <section id="about">
     <h1 class="title">
       about me
     </h1>
-    <p class="para">
+    <p class="para mq-mw pt-10">
       Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
     </p>
-    <h2 class="sub-heading">
-      Get to know me!
-    </h2>
-    <p class="para pb-5 " >
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quisquam qui reiciendis, corporis iste quae tenetur nam minus. Fugit nemo harum consequuntur tenetur asperiores aliquam illum nobis repellendus commodi mollitia quasi praesentium dolorum, illo, nesciunt ea temporibus numquam! Tempora rerum, molestiae vitae consequatur, libero necessitatibus fugiat, animi enim provident quaerat quos dolorum quam officiis porro vel eius doloribus voluptate. In porro enim reiciendis architecto, totam distinctio itaque! Natus odit atque qui ducimus molestiae aliquid odio, magnam corrupti quae debitis libero.
-    </p>
-    <button class="buttons-hov">
-      <a href="#contact" class="buttons ml-10">Contact me</a>
-    </button>
-    <h2 class="sub-heading">
-      My skills
-    </h2>
-    <ul class="skills">
-      <li class="skill-box">HTML5</li>
-      <li class="skill-box">CSS3</li>
-      <li class="skill-box">Javascript</li>
-      <li class="skill-box">SASS</li>
-      <li class="skill-box">GIT</li>
-      <li class="skill-box">Github</li>
-      <li class="skill-box">Responsive Design</li>
-      <li class="skill-box">Terminal</li>
-      <li class="skill-box">Tailwind</li>
-      <li class="skill-box">VS code</li>
-      <li class="skill-box">project management</li>
-    </ul>
+    <div class="mq-flex">
+    <div class="margin">
+      <h2 class="sub-heading">
+        Get to know me!
+      </h2>
+      <p class="para pb-8 mq-mw2" >
+        I'm a <b>Frontend web developer</b>, building interactive and responsive frontend for websites and web applications to enhance pleasant user's experience and achieve the expected goal. You can check some of my works in the <b>projects</b> section.
+        <br>
+        I also like writing blog articles about the things i learn concerning web development and other tech related stuffs. I'm passionate of new technologies and tech features. I will be sharing my passion and web development related stuffs on my <b>Linked In</b>, the link is found in the <b>socials</b> section.
+        <br>
+        I am <b>open to job opportunities</b> where i can contribute, grow and learn. If you have an opportunity that matches my skills and experience, feel free to <b>contact</b> me.
+      </p>
+      <button class="buttons-hov">
+        <a href="#contact" class="buttons ml-10">Contact me</a>
+      </button>
+    </div>
+    <div class="margin">
+      <h2 class="sub-heading">
+        My skills
+      </h2>
+      <ul class="skills">
+        <li class="skill-box">HTML5</li>
+        <li class="skill-box">CSS3</li>
+        <li class="skill-box">Javascript</li>
+        <li class="skill-box">SASS</li>
+        <li class="skill-box">GIT</li>
+        <li class="skill-box">Github</li>
+        <li class="skill-box">Responsive Design</li>
+        <li class="skill-box">Terminal</li>
+        <li class="skill-box">Tailwind</li>
+        <li class="skill-box">VS code</li>
+        <li class="skill-box">project management</li>
+      </ul>
+    </div>
+    </div>
   </section>
 
   <section id="projects">
     <h1 class="title">
       projects
     </h1>
-    <p class="para" id="projects2">
+    <p class="para pt-10" id="projects2">
       Here you will find some personal projects that i created to show case my skills.
     </p>
-    <div class="project">
-      <div class="pjt-img-div">
-        <img src="/images/Capture web_14-12-2022_16342_dav-password-generator.netlify.app.jpeg" alt="project-image" class="pjt-img">
+    
+      <div class="project">
+          <div class="pjt-img-div item1">
+            <img src="/images/Capture web_14-12-2022_16342_dav-password-generator.netlify.app.jpeg" alt="project-image" class="pjt-img">
+          </div>
+          <div class="item2">
+            <h2 class="sub-heading">password generator</h2>
+            <p class="para">
+              This is a webapp that i created where people can get randomly generated very secured passwords that they can copy to the clipboard to use anywhere they need.
+            </p>
+          </div>
+          <div class="skills item3">
+              <div class="skill-box">HTML5</div>
+              <div class="skill-box">CSS3</div>
+              <div class="skill-box">Javascript</div>
+          </div>
+          <div class="item4">
+            <button class="mt-10 buttons-hov"><a href="https://dav-password-generator.netlify.app" class="buttons" target="_blank">view project</a></button>
+          </div>
       </div>
-      <h2 class="sub-heading">password generator</h2>
-      <p class="para">
-        This is a webapp that i created where people can get randomly generated very secured passwords that they can copy to the clipboard to use anywhere they need.
-      </p>
-      <div class="skills">
-        <div class="skill-box">HTML5</div>
-        <div class="skill-box">CSS3</div>
-        <div class="skill-box">Javascript</div>
-      </div>
-      <button class="mt-10 buttons-hov"><a href="https://dav-password-generator.netlify.app" class="buttons" target="_blank">view project</a></button>
-    </div>
 
     <div class="project">
-      <div class="pjt-img-div">
+      <div class="pjt-img-div item1">
         <img src="/images/Capture web_14-12-2022_16531_dav-metric-converter.netlify.app.jpeg" alt="project-image" class="pjt-img">
       </div>
-      <h2 class="sub-heading">Metric/imperial unit converter</h2>
-      <p class="para">
-        This is a webapp that i created to convert metric units of measurements like lenght, volume and mass to their value in imperial units.
-      </p>
-      <div class="skills">
+      <div class="item2">
+        <h2 class="sub-heading">Metric/imperial unit converter</h2>
+        <p class="para">
+          This is a webapp that i created to convert metric units of measurements like lenght, volume and mass to their value in imperial units.
+        </p>
+      </div>
+      <div class="skills item3">
         <div class="skill-box">HTML5</div>
         <div class="skill-box">CSS3</div>
         <div class="skill-box">Javascript</div>
       </div>
-      <button class="mt-10 buttons-hov"><a href="https://dav-metric-converter.netlify.app" class="buttons" target="_blank">view project</a></button>
+      <div class="item4">
+        <button class="mt-10 buttons-hov"><a href="https://dav-metric-converter.netlify.app" class="buttons" target="_blank">view project</a></button>
+      </div>
     </div>
 
     <div class="project">
-      <div class="pjt-img-div">
+      <div class="pjt-img-div item1">
         <img src="/images/Capture web_14-12-2022_16634_dav-scoreboard.netlify.app.jpeg" alt="project-image" class="pjt-img">
       </div>
-      <h2 class="sub-heading">Basketball scoreboard</h2>
-      <p class="para">
-        This webapp is Basketball scoreboard where the score holder can easily input the score, fouls and mention the period of the game. The score keeps incrementing and the players score through out the game. 
-      </p>
-      <div class="skills">
+      <div class="item2">
+        <h2 class="sub-heading">Basketball scoreboard</h2>
+          <p class="para">
+            This webapp is Basketball scoreboard where the score holder can easily input the score, fouls and mention the period of the game. The score keeps incrementing and the players score through out the game. 
+          </p>
+      </div>
+      <div class="skills item3">
         <div class="skill-box">HTML5</div>
         <div class="skill-box">CSS3</div>
         <div class="skill-box">Javascript</div>
       </div>
-      <button class="mt-10 buttons-hov"><a href="https://dav-scoreboard.netlify.app" class="buttons" target="_blank">view project</a></button>
+      <div class="item4">
+        <button class="mt-10 buttons-hov"><a href="https://dav-scoreboard.netlify.app" class="buttons" target="_blank">view project</a></button>
+      </div>
     </div>
 
     <div class="project">
-      <div class="pjt-img-div">
+      <div class="pjt-img-div item1">
         <img src="/images/Capture web_14-12-2022_16716_dav-counter.netlify.app.jpeg" alt="project-image" class="pjt-img">
       </div>
-      <h2 class="sub-heading">Counter App</h2>
-      <p class="para">
-        This is a simple app to count for example the number of people entring a bus or something else. It can be used to count anything
-      </p>
-      <div class="skills">
+      <div class="item2">
+        <h2 class="sub-heading">Counter App</h2>
+        <p class="para">
+          This is a simple app to count for example the number of people entring a bus or something else. It can be used to count anything.
+        </p>
+      </div>
+      <div class="skills item3">
         <div class="skill-box">HTML5</div>
         <div class="skill-box">CSS3</div>
         <div class="skill-box">Javascript</div>
       </div>
-      <button class="mt-10 buttons-hov"><a href="https://dav-counter.netlify.app" class="buttons" target="_blank">view project</a></button>
+      <div class="item4">
+        <button class="mt-10 buttons-hov"><a href="https://dav-counter.netlify.app" class="buttons" target="_blank">view project</a></button>
+      </div>
     </div>
 
     <div class="project">
-      <div class="pjt-img-div">
+      <div class="pjt-img-div item1">
         <img src="/images/Capture d’écran-chrome-extension.png" alt="project-image" class="pjt-img">
       </div>
-      <h2 class="sub-heading">Browser Extension</h2>
-      <p class="para">
-        This is a web browser extension that allows the user to save the url of his favourite websites so he/she can come back to them very easily. 
-        <br>
-        <span style="color: red;">This extension is not deployed on any browser web store</span>
-      </p>
-      <div class="skills">
+      <div class="item2">
+        <h2 class="sub-heading">Browser Extension</h2>
+        <p class="para">
+          This is a web browser extension that allows the user to save the url of his favourite websites so he/she can come back to them very easily. 
+          <br>
+          <span style="color: red;">This extension is not deployed on any browser web store</span>
+        </p>
+      </div>
+      <div class="skills item3">
         <div class="skill-box">HTML5</div>
         <div class="skill-box">CSS3</div>
         <div class="skill-box">Javascript</div>
       </div>
-      <button class="mt-10 buttons-hov"><a href="chrome://extensions/?id=djlcndifgbjogegcnbjjengcgbkdhakl" class="buttons" target="_blank">view project</a></button>
+      <div class="item4">
+        <button class="mt-10 buttons-hov"><a href="chrome://extensions/?id=djlcndifgbjogegcnbjjengcgbkdhakl" class="buttons" target="_blank">view project</a></button>
+      </div>
     </div>
   </section>
 
@@ -172,7 +217,7 @@
     <h1 class="title">
       Contact me
     </h1>
-    <p class="para">
+    <p class="para pt-5 pb-5" style="color: #000; font-weight: 500; font-size: 1.3em;">
       Feel free to contact me buy submitting the form below and i will get back to you as soon as possible
     </p>
     <div class="form-container">

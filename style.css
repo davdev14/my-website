@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family:'Ubuntu', Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 html{
   scroll-behavior: smooth;
@@ -15,6 +15,8 @@ header {
   z-index: 1;
   top: 0;
   width: 100%;
+  /* margin-bottom: 10px; */
+  /* height: 50px; */
 }
 .gap10{gap: 10px;}
 .pic {
@@ -74,13 +76,11 @@ header {
 }
 /* section home */
 #home {
-  position: relative;
-  top: 30px;
-  z-index: -1;
+  padding-top: 50px;
   background: url("/images/pexels-laura-tancredi-7078619.jpg") repeat;
   height: 700px;
 }
-#home img {
+#home #profile-pic {
   height: 200px;
 }
 .profile-pic {
@@ -91,6 +91,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .home-btn {
   display: flex;
   margin: auto;
@@ -112,6 +113,11 @@ header {
   text-align: center;
   font-size: 1.2em;
   margin: 12px;
+}
+.cv-btn{
+  border: 2px solid #2196F3;
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 .buttons{
   text-decoration: none;
@@ -163,16 +169,20 @@ header {
 /* section projects */
 #projects {
   margin-top: 100px;
+  background-color: #f5fefd;
 }
 .pjt-img-div {
   margin: 50px 0 0 0;
   width: 300px;
 }
+
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #acadac;
+  padding-bottom: 50px;
 }
 /* section contact */
 form {
@@ -187,6 +197,7 @@ form input {
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  background-color: #f5fefd;
 }
 form label {
   margin-left: 12px;
@@ -198,6 +209,7 @@ form textarea {
   border: 1px solid #2196F3;
   margin-bottom: 20px;
   outline: 1px solid #2196F3;
+  background-color: #f5fefd;
 }
 form input[type="submit"] {
   cursor: pointer;
@@ -206,7 +218,7 @@ form input[type="submit"] {
   color: #fff;
   border-radius: 25px;
     background: #2196f3;
-    box-shadow: 3px -3px 12px #2092ec, -3px 3px 12px #229bfa;
+    box-shadow: 3px -3px 12px #2092ec, -3px 3px 12px #f9f9fa;
 }
 .submit-btn {
   display: flex;
@@ -214,15 +226,16 @@ form input[type="submit"] {
   align-items: center;
 }
 #contact {
-  background-color: #acadac;
-  margin-top: 200px;
+  background: url("/images/pexels-laura-tancredi-7078619.jpg");
+  padding-top: 20px;
   padding-bottom: 100px;
 }
 .form-container {
   background-color: #fff;
-  margin: 30px 25px;
+  margin: auto;
   border-radius: 17px;
   padding: 2px;
+  width: 80%;
 }
 #socials a img{
   height: 24px;
@@ -274,12 +287,95 @@ background-color: #656565;
 .warning {
   display: none;
 }
-
+.socials-bar {
+  display: none;
+}
 @media screen and (min-width: 768px) {
+  .pad{
+    padding-left: 60px;
+  }
   .warning {
     display: inline;
     margin: 12px;
     color: red;
     text-align: center;
   }
+  .socials-bar a img {
+    width: 30px;
+    margin: 0;
+  }
+  .socials-bar a:hover{
+    background-color: #2196F3;
+    opacity: 40%;
+  }
+  .socials-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    position: absolute;
+    top: 200px;
+    background-color: #fff;
+  }
+  .socials-bar a {
+    padding: 10px;
+  }
+  .dropdown-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown-content {
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+  .dropdown-content a {
+    border: none;
+    display: inline;
+    padding: 0 20px;
+    font-weight: 700;
+  }
+  .dropdown-content a:hover {
+    color: #2196F3;
+    background-color: transparent;
+  }
+  .dropdown-btn {
+    display: none;
+  }
+  .mq-mw {
+    margin: auto;
+    max-width: 700px;
+  }
+  .mq-mw2 {
+    margin: auto;
+    max-width: 1650px;
+  }
+  .margin{
+    margin: 0 80px;
+  } 
+}
+
+@media screen and (min-width: 1024px){
+  .mq-flex {
+    display: flex;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 0 60px;
+    column-gap: 100px;
+  }
+  .project .item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+  .project .item2, .item3, .item4 {
+    grid-column: 2 / 4;
+    margin: auto;
+  }
+  .project .item2{grid-row: 1 / 2;}
+  .project .item3{grid-row: 2 / 4;}
+  .project .item4{grid-row: 4 / 5;}
 }
