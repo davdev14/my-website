@@ -78,7 +78,7 @@ header {
 #home {
   padding-top: 50px;
   background: url("/images/pexels-laura-tancredi-7078619.jpg") repeat;
-  /* height: 700px; */
+  height: 700px;
 }
 #home #profile-pic {
   height: 200px;
@@ -371,11 +371,28 @@ background-color: #656565;
     grid-column: 1 / 2;
     grid-row: 1 / 5;
   }
-  .project .item2, .item3, .item4 {
+  .project .item2, .item3, .item4, .see-more-btn {
     grid-column: 2 / 4;
     margin: auto;
   }
   .project .item2{grid-row: 1 / 2;}
   .project .item3{grid-row: 2 / 4;}
   .project .item4{grid-row: 4 / 5;}
+  .project .see-more-btn{grid-row: 4 / 5; margin-top: 100px;}
+  
+}
+/* project page */
+.back{
+  background-color: #E7E7E7;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  position: fixed;
+  top: 0;
+}
+.back:hover {
+  color: #2196F3;
 }
