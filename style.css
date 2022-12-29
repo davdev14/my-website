@@ -78,7 +78,7 @@ header {
 #home {
   padding-top: 50px;
   background: url("/images/pexels-laura-tancredi-7078619.jpg") repeat;
-  height: 700px;
+  height: 100%;
 }
 #home #profile-pic {
   height: 200px;
@@ -354,6 +354,9 @@ background-color: #656565;
   .margin{
     margin: 0 80px;
   } 
+  .form-container {
+    width: 600px;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -379,7 +382,11 @@ background-color: #656565;
   .project .item3{grid-row: 2 / 4;}
   .project .item4{grid-row: 4 / 5;}
   .project .see-more-btn{grid-row: 4 / 5; margin-top: 100px;}
-  
+  .max-width {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+  }
 }
 /* project page */
 .back{
