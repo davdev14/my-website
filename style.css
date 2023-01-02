@@ -357,6 +357,9 @@ background-color: #656565;
   .form-container {
     width: 600px;
   }
+  #home {
+    height: 700px;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -387,6 +390,7 @@ background-color: #656565;
     text-align: center;
     margin: auto;
   }
+  
 }
 /* project page */
 .back{
