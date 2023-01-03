@@ -132,9 +132,9 @@ header {
   transform: scale(1.1);
 }
 /* section about */
-#about {
-  margin-top: 100px;
-}
+/* #about {
+  
+} */
 .title {
   text-align: center;
   text-transform: uppercase;
@@ -250,7 +250,7 @@ background-color: #656565;
 #socials h1 {
   font-size: 2em;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 80px;
   border-bottom: 5px solid #acadac;
   margin: 0 60px;
 }
@@ -406,4 +406,8 @@ background-color: #656565;
 }
 .back:hover {
   color: #2196F3;
+}
+
+.my-line-height {
+  line-height: 1.6;
 }
